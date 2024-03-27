@@ -1,3 +1,6 @@
+html {
+    margin: 0;
+  }
 header {
     width: 100%;
 }
@@ -20,7 +23,6 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
     padding: 0 20px;
 }
 
@@ -39,9 +41,8 @@ nav ul img {
     margin: 0 20px; /* Agrega un margen horizontal para separar el logo */
 }
 body{
-    background-image: url("../img/Presentacion\ de\ Hamburguesas-1.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 .menuImagenes {
@@ -51,7 +52,36 @@ body{
 }
 
 .menuImagenes img {
-    width: 300px; /* Ajusta el ancho deseado para las imágenes */
+    width: 350px; /* Ajusta el ancho deseado para las imágenes */
     height: auto; /* Mantiene la proporción de aspecto */
     margin: 10px; /* Agrega un margen entre las imágenes */
+}
+
+.home-section {
+    background-image: url("../img/Background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Ajusta este valor según el tamaño deseado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+  }
+  .home-section h2 {
+    font-size: 2.5rem; /* Ajusta el valor según tus necesidades */
+    font-family: 'Bebas Neue', cursive;
+  }
+  .home-section p {
+    font-size: 1.2rem; /* Ajusta el valor según tus necesidades */
+  }
+.home-section h2,
+.home-section p {
+  background-color: rgba(0, 0, 0, 0.354);
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px; /* Añade bordes redondeados */
 }
