@@ -44,7 +44,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
-
+h2{
+    font-family: 'Bebas Neue';
+}
 .menuImagenes {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +57,7 @@ body{
     width: 350px; /* Ajusta el ancho deseado para las imágenes */
     height: auto; /* Mantiene la proporción de aspecto */
     margin: 10px; /* Agrega un margen entre las imágenes */
+    border-radius: 10px;
 }
 
 .home-section {
@@ -73,7 +76,6 @@ body{
   }
   .home-section h2 {
     font-size: 2.5rem; /* Ajusta el valor según tus necesidades */
-    font-family: 'Bebas Neue', cursive;
   }
   .home-section p {
     font-size: 1.2rem; /* Ajusta el valor según tus necesidades */
@@ -84,4 +86,87 @@ body{
   padding: 10px 20px;
   display: inline-block;
   border-radius: 5px; /* Añade bordes redondeados */
+}
+.nosotros-section {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.nosotros-section .nosotros-text{
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+}
+.nosotros-section h2{
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+.nosotros-section img {
+    width: 40%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto */
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
+}
+
+.nosotros-section p {
+    margin-right: 20px; /* Agrega un margen derecho al texto */
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+.menu-section {
+    background-image: url("../img/Menu-background.jpg"); /* Reemplaza "nombre-de-la-imagen.jpg" con el nombre real de tu archivo de imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0; /* Ajusta el relleno vertical según sea necesario */
+}
+.menu-section h2{
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.menu-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item img {
+    transition: filter 0.3s ease;
+}
+
+.ingredientes {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 94.6%;
+    height: 93.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.ingredientes h2 {
+    order: 1; /* Mueve el h2 al primer lugar */
+    margin-bottom: 0; /* Agrega un margen inferior al h2 */
+    font-size: 3rem;
+}
+
+.ingredientes p {
+    order: 2; /* Mueve el p al segundo lugar */
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.menu-item:hover .ingredientes {
+    opacity: 1;
 }
