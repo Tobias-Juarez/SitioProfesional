@@ -4,6 +4,7 @@ html {
 header {
     width: 100%;
 }
+
 .navClass {
     background-color: black;
     padding: 10px;
@@ -33,12 +34,13 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: clamp(0.8rem, 3vw, 1.2rem); /* Ajusta el tamaño de fuente en función del ancho de la ventana */
+    font-size: clamp(0.8rem, 3vw, 1.2rem); 
     font-weight: 700;
 }
 nav ul img {
-    height: 60px; /* Ajusta la altura según tus necesidades */
-    margin: 0 20px; /* Agrega un margen horizontal para separar el logo */
+    height: 60px; 
+    margin: 0 20px; 
+
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -54,9 +56,9 @@ h2{
 }
 
 .menuImagenes img {
-    width: 350px; /* Ajusta el ancho deseado para las imágenes */
-    height: auto; /* Mantiene la proporción de aspecto */
-    margin: 10px; /* Agrega un margen entre las imágenes */
+    width: 350px;
+    height: auto; 
+    margin: 10px; 
     border-radius: 10px;
 }
 
@@ -64,7 +66,7 @@ h2{
     background-image: url("img/Background-image.jpg");
     background-size: cover;
     background-position: center;
-    height: 500px; /* Ajusta este valor según el tamaño deseado */
+    height: 500px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,22 +77,22 @@ h2{
 
   }
   .home-section h2 {
-    font-size: 2.5rem; /* Ajusta el valor según tus necesidades */
+    font-size: 2.5rem; 
   }
   .home-section p {
-    font-size: 1.2rem; /* Ajusta el valor según tus necesidades */
+    font-size: 1.2rem; 
   }
 .home-section h2,
 .home-section p {
   background-color: rgba(0, 0, 0, 0.354);
   padding: 10px 20px;
   display: inline-block;
-  border-radius: 5px; /* Añade bordes redondeados */
+  border-radius: 5px; 
 }
 .nosotros-section {
     display: flex;
-    flex-direction: row; /* Alinea los elementos en fila */
-    align-items: center; /* Centra verticalmente los elementos */
+    flex-direction: row; 
+    align-items: center; 
 }
 .nosotros-section .nosotros-text{
     margin-left: 10%;
@@ -102,22 +104,24 @@ h2{
     margin-bottom: 5px;
 }
 .nosotros-section img {
-    width: 40%; /* Ajusta el ancho de la imagen */
-    height: auto; /* Mantiene la proporción de aspecto */
-    margin-left: auto; /* Empuja la imagen hacia la derecha */
+    width: 40%; 
+    height: auto; 
+    margin-left: auto; 
 }
 
 .nosotros-section p {
-    margin-right: 20px; /* Agrega un margen derecho al texto */
-    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    margin-right: 20px; 
+    flex: 1; 
 }
 
 .menu-section {
-    background-image: url("img/Menu-background.jpg"); /* Reemplaza "nombre-de-la-imagen.jpg" con el nombre real de tu archivo de imagen */
+    background-image: url("img/Menu-background.jpg"); 
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 50px 0; /* Ajusta el relleno vertical según sea necesario */
+    padding: 50px 0; 
+    
 }
 .menu-section h2{
     font-size: 6rem;
@@ -155,13 +159,13 @@ h2{
 }
 
 .ingredientes h2 {
-    order: 1; /* Mueve el h2 al primer lugar */
-    margin-bottom: 0; /* Agrega un margen inferior al h2 */
+    order: 1; 
+    margin-bottom: 0; 
     font-size: 3rem;
 }
 
 .ingredientes p {
-    order: 2; /* Mueve el p al segundo lugar */
+    order: 2; 
     text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -170,3 +174,99 @@ h2{
 .menu-item:hover .ingredientes {
     opacity: 1;
 }
+
+.locales-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locales-contenido {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Añadido */
+}
+
+.locales-info {
+    text-align: center;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.locales-info h2 {
+    text-align: center; /* Centrar el título "Locales" */
+    font-size:  3rem;
+    
+}
+
+.local-item {
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 8rem;
+}
+
+.locales-imagen {
+    width: 40%;
+}
+
+.locales-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding-top: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.valores-section {
+    text-align: center;
+  }
+
+.valores-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    padding-left: 2rem;
+}
+
+.valores-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.valores-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 20%;
+}
+
+.valores-section ol {
+    padding: 0;
+    margin: 0;
+}
+
+.valores-section ol li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contacto-section{
+    margin-left: 2rem;
+}
+.contacto-section .redes-sociales {
+    float: right;
+    margin-top: 10px;
+}
+.contacto-section .redes-sociales img {
+    width: 1.5rem;
+    height: 1.5rem;
+} 
+  
+
+ 
