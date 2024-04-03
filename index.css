@@ -187,7 +187,7 @@ h2{
     display: flex;
     align-items: flex-start;
     width: 100%;
-    max-width: 1200px; /* Añadido */
+    max-width: 1200px; 
 }
 
 .locales-info {
@@ -197,7 +197,7 @@ h2{
 }
 
 .locales-info h2 {
-    text-align: center; /* Centrar el título "Locales" */
+    text-align: center; 
     font-size:  3rem;
     
 }
