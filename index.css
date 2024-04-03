@@ -259,14 +259,37 @@ h2{
 .contacto-section{
     margin-left: 2rem;
 }
-.contacto-section .redes-sociales {
-    float: right;
-    margin-top: 10px;
+.contacto-section h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    padding-left: 2rem;
 }
+
 .contacto-section .redes-sociales img {
     width: 1.5rem;
     height: 1.5rem;
 } 
-  
+.contacto-section .redes-sociales  p {
+    color: black;
+    margin-bottom: 5px;
+    
+}
+.contacto-info {
+    padding-left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
- 
+.info-derecha {
+    padding-left: 20rem;
+}
+.red-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.red-social a {
+    color: black;
+}
