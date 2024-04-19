@@ -1,18 +1,19 @@
 html {
     margin: 0;
   }
-header {
-    width: 100%;
-}
 
-.navClass {
-    background-color: black;
-    padding: 10px;
+
+nav{
     width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    background-color: black;
+    z-index: 100;
 }
 
 nav img{
-    height: 100px;
+    height: 100%;
 }
 nav h1 {
     color: white;
@@ -20,9 +21,7 @@ nav h1 {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
@@ -37,11 +36,37 @@ nav ul li a {
     font-size: clamp(0.8rem, 3vw, 1.2rem); 
     font-weight: 700;
 }
-nav ul img {
-    height: 60px; 
-    margin: 0 20px; 
 
+
+#hamburger-checkbox {
+    display: none;
 }
+.hamburger {
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+.nav-links{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    } 
+}
+#hamburger-checkbox:checked ~ .nav-links {
+    display: flex;
+
+  }
+
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -49,18 +74,7 @@ body{
 h2{
     font-family: 'Bebas Neue';
 }
-.menuImagenes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.menuImagenes img {
-    width: 350px;
-    height: auto; 
-    margin: 10px; 
-    border-radius: 10px;
-}
 
 .home-section {
     background-image: url("img/Background-image.jpg");
@@ -76,10 +90,10 @@ h2{
     padding: 20px;
 
   }
-  .home-section h2 {
+.home-section h2 {
     font-size: 2.5rem; 
   }
-  .home-section p {
+.home-section p {
     font-size: 1.2rem; 
   }
 .home-section h2,
@@ -113,8 +127,20 @@ h2{
     margin-right: 20px; 
     flex: 1; 
 }
+.menuImagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.menu-item img {
+    width: 100%;
+    margin: 10px; 
+    border-radius: 10px;
+    z-index: 200;
+}
 .menu-section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,6 +187,7 @@ h2{
 .menu-item {
     position: relative;
     overflow: hidden;
+    width: 30%;
 }
 
 .menu-item img {
@@ -171,8 +198,8 @@ h2{
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 94.6%;
-    height: 93.6%;
+    width: 100%;
+    height: 93%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,7 +216,7 @@ h2{
     order: 1; 
     text-align: center;
     margin-bottom: 0; 
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .ingredientes p {
@@ -284,10 +311,9 @@ h2{
     margin-bottom: 20px;
 }
 
-.contacto-section{
-    margin-left: 2rem;
-}
+
 .contacto-section h2 {
+    width: 100%;
     margin-bottom: 1rem;
     font-size: 3rem;
     padding-left: 2rem;
@@ -304,14 +330,13 @@ h2{
 }
 .contacto-info {
     padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content:space-between;
+    align-items: center;
 }
 
-.info-derecha {
-    padding-left: 20rem;
-}
+
 .red-social {
     display: flex;
     align-items: center;
