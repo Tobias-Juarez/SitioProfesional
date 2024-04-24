@@ -53,25 +53,9 @@ nav ul li a {
 .logo{
     height: 100%;
 }
-@media (max-width: 768px) {
-    .logo{
-        position: absolute;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .hamburger {
-        margin-right: 4rem;
-        display: block;
-        position: absolute;
-        float: right;
-        z-index: 50;
-    }
     
-    .nav-links {
-        display: none;
-    } 
-}
+    
+
 #hamburger-checkbox:checked ~ .logo {
     display: none;
 }
@@ -130,7 +114,6 @@ h2{
 }
 .nosotros-section .nosotros-text{
     margin-left: 10%;
-    margin-right: 10%;
     flex-direction: column;
 }
 .nosotros-section h2{
@@ -140,13 +123,9 @@ h2{
 .nosotros-section img {
     width: 40%; 
     height: auto; 
-    margin-left: auto; 
 }
 
-.nosotros-section p {
-    margin-right: 20px; 
-    flex: 1; 
-}
+
 .menuImagenes {
     display: flex;
     flex-wrap: wrap;
@@ -228,7 +207,6 @@ h2{
     transition: opacity 0.3s ease;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    box-sizing: border-box;
     border-radius: 10px;
 }
 
@@ -267,7 +245,6 @@ h2{
 
 .locales-info {
     text-align: center;
-    margin-right: 20px;
     flex: 1;
 }
 
@@ -278,7 +255,7 @@ h2{
 }
 
 .local-item {
-    margin-top: 10px;
+    margin-top: 5%;
     text-align: left;
     padding-left: 8rem;
 }
@@ -292,7 +269,6 @@ h2{
     height: auto;
     border-radius: 5px;
     padding-top: 3rem;
-    margin-right: 3rem;
     padding-bottom: 3rem;
 }
 
@@ -334,9 +310,11 @@ h2{
 
 .contacto-section h2 {
     width: 100%;
+    display: inline;
     margin-bottom: 1rem;
     font-size: 3rem;
     padding-left: 2rem;
+    margin-top: 2rem;
 }
 
 .contacto-section .redes-sociales img {
@@ -352,10 +330,13 @@ h2{
     padding-left: 2rem;
     padding-right: 2rem;
     display: flex;
-    justify-content:space-between;
-    align-items: center;
 }
-
+.info-izquierda{
+    width: 50%;
+}
+.info-derecha{
+    width: 50%;
+}
 
 .red-social {
     display: flex;
@@ -365,4 +346,68 @@ h2{
 }
 .red-social a {
     color: black;
+}
+@media (max-width: 768px) {
+    .logo{
+        position: absolute;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hamburger {
+        margin-right: 1rem;
+        display: block;
+        position: absolute;
+        float: right;
+        z-index: 50;
+    }
+    
+    .nav-links {
+        display: none;
+    } 
+
+    .valores-section p{
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+    .valores-section ol li{
+        font-size: 1rem;
+    }
+    .locales-section h2{
+        margin: 1rem 0;
+    }
+    .locales-section .local-item{
+        padding-left: 0;
+        margin-left: 10%;
+    }
+    .nosotros-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nosotros-section .nosotros-text{
+        margin-left: 5%;
+    }
+    
+    .contacto-section h3{
+        font-size: 1rem;
+    }
+    .contacto-section p, a{
+        font-size: 0.8rem;
+    }
+    .menu-item{
+        width: 40%;
+    }
+    .menu-item h2{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-item p{
+        font-size: 0.5rem;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-item .ingredientes{
+        width: 95%;
+    }
 }
